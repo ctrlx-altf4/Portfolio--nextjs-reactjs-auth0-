@@ -6,7 +6,7 @@ function About(){
 
 	return(
 		<BaseLayout>
-			<BasePage className="about">
+			<BasePage className="about" title="about">
 				<div className="me">styleing</div>I am from about.js
 			</BasePage>
 		</BaseLayout>

@@ -8,7 +8,7 @@ function Portfolio(props){
     const { portfolio } = props;
     return(
         <BaseLayout>
-            <BasePage className="portfolio">
+            <BasePage className="portfolio" title="portfolio">
                 <h1>I am from portfolio without s</h1>
                 <h3>id: {portfolio.id}</h3>
                 <h3>title: {portfolio.title}</h3>

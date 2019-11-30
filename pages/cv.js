@@ -5,7 +5,7 @@ import BasePage from '../components/BasePage';
 function Cv(){
 	return(
 		<BaseLayout>
-			<BasePage className="cv">
+			<BasePage className="cv" title="CV">
 			I am from cv;
 			</BasePage>
 		</BaseLayout>

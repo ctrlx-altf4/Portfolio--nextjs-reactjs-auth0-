@@ -5,7 +5,7 @@ import BasePage from '../components/BasePage'
 function Blogs(){
 	return(
 		<BaseLayout>
-			<BasePage className="blogs">
+			<BasePage className="blogs" title="blogs">
 				I am from blog;
 			</BasePage>
 		</BaseLayout>

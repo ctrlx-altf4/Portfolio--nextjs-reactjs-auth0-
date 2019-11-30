@@ -9,7 +9,7 @@ const Index =(props) =>{
 	const [ roles, setRoles ] = useState(["Developer", 
 	"React.js", "Node.js", "Next.js", "Team Player", "Literature Lover"]);
 	return(	
-		<BaseLayout className="cover">
+		<BaseLayout className="cover" headerType="index">
 			<div className="main-section">
 				<div className="background-image">
 					<img src="/static/images/background-index.png" />
@@ -36,9 +36,10 @@ const Index =(props) =>{
 					</Col>
 					<Col md="6" className="hero-welcome-wrapper">
 					<div className="hero-welcome-text">
-						<h1>
-						Welcome to the portfolio website of<br/> Prajwal Pradhan.<br/>
-						Get informed, collaborate and discover projects I was working on through the years!
+						<h1> Hello! <br/>
+						 NAMASTE!!!
+						Welcome to my e-portfolio<br/>
+						I'm Prajwal Pradhan.<br/>
 						</h1>
 					</div>
 					<Typed
