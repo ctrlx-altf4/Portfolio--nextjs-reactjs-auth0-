@@ -10,8 +10,18 @@ class Auth{
       scope: "openid profile"
     });
     this.login = this.login.bind(this)
+    this.handleAuthentication = this.handleAuthentication.bind(this);
   }
-  
+  handleAuthentication(){
+    this.auth0.parseHash((err,authResult)=>{
+      if(authResult && authResult.accessToken && authResult.idToken){
+        this.setSession(authResult);
+      }
+      else if(err){
+        console.log(err);
+      }
+    })
+  }
   login(){
     console.log('entered');
     this.auth0.authorize();
